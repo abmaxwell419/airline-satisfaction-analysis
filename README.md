@@ -3,7 +3,7 @@
 
 ## Project Overview 
 
-This project uses a Decision Tree to predict customer satisfaction based on various customer attributes. The target variable is binary, Satisfied or Dissatisfied. The goal is to understand which features most strongly influence customer satisfaction and to build a model that can predict satisfaction for new customers.
+This project uses a Decision Tree to predict customer satisfaction based on various customer attributes. The target variable is binary, Satisfied or Dissatisfied. The goal is to understand which features most strongly influence customer satisfaction and to build a model that can accurately predict satisfaction for new customers.
 
 ## Data
 
