@@ -7,7 +7,7 @@ This project uses a Decision Tree to predict customer satisfaction based on vari
 
 ## Data
 
-The data for this activity includes survey responses from 129,880 customers. It includes data points such as class, flight distance, and in-flight entertainment, among others.
+The data for this project is simualated airline customer survey responses from 129,880 customers provided by Google as part of the Google Advanced Data Analytics Certificate. It includes data points such as class, flight distance, and in-flight entertainment, among others.
 
 ## Code and Resources
 
@@ -50,10 +50,26 @@ The data for this activity includes survey responses from 129,880 customers. It 
 
 ## Results and Conclusions
 
+<img width="578" height="650" alt="Screenshot 2025-12-09 at 8 44 51 PM" src="https://github.com/user-attachments/assets/45b8e710-781d-40ec-8131-a461061f53b2" />
 
+**Among all predictors, Inflight Entertainment contributes the most to the model’s predictive performance, as indicated by its highest feature importance score.**
 
-<img width="578" height="675" alt="Screenshot 2025-12-09 at 8 44 51 PM" src="https://github.com/user-attachments/assets/45b8e710-781d-40ec-8131-a461061f53b2" />
+### Decision Tree
+
+<img width="846" height="739" alt="Screenshot 2025-12-10 at 9 12 37 PM" src="https://github.com/user-attachments/assets/19d1a4ea-0109-4abd-bd16-5e4a9e4eee51" />
+
+**Root Node**
+- The model selects Inflight Entertainment as the root feature. This confirms that inflight entertainment is the strongest single predictor/first split of customer satisfaction in the dataset.
+
+**Right Branch** 
+- Good inflight entertainment is a strong indicator of satisfaction, even when ease of online booking is low (≤ 3.5).
+- Certain types of customers (loyal vs. disloyal) are highly correlated with satisfaction.
+- High inflight entertainment ratings strongly predict satisfaction, and this effect is reinforced by positive customer experience in online booking and customer type characteristics.
+
+**Left Branch**
+- Among customers with inflight entertainment ratings of ≤ 3.5, and seat comfort rating of ≤ 3.5, the model predicts dissatisfaction.
+- Low inflight entertainment, when combined with low seat comfort, is the strongest predictor of dissatisfaction. Improvements in seat comfort partially offset negative entertainment ratings.
 
 ## Next Steps
 
-partial dependency plot
+Create a partial dependency plot to answer if seat comfort ratings improve by one point would the predicted satisfaction increase?
