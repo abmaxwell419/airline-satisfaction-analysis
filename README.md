@@ -12,6 +12,7 @@ The data for this project is simualated airline customer survey responses from 1
 ## Code and Resources
 
 - Visual Studio Code
+- Jupyter Notebooks
 - Python version 3.12.12
 
 ## Packages
