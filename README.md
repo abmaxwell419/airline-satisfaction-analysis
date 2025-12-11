@@ -1,22 +1,59 @@
+
 # Airline Customer Satisfaction Optimization
 
 ## Project Overview 
 
-This project uses a Decision Tree Classifier to predict customer satisfaction based on various customer attributes. The target variable is binary (Satisfied / Not Satisfied).
-The goal is to understand which features most strongly influence customer satisfaction and to build a model that can predict satisfaction for new customers.
+This project uses a Decision Tree to predict customer satisfaction based on various customer attributes. The target variable is binary, Satisfied or Dissatisfied. The goal is to understand which features most strongly influence customer satisfaction and to build a model that can predict satisfaction for new customers.
 
-## Installation Instructions
+## Data
 
-## Data Source
+The data for this activity includes survey responses from 129,880 customers. It includes data points such as class, flight distance, and in-flight entertainment, among others.
 
 ## Code and Resources
-used VS Code, Python version 3.12.12
 
-## Packages Used
-EDA - numpy, pandas 
+- Visual Studio Code
+- Python version 3.12.12
+
+## Packages
+- EDA - numpy, pandas
+- Visualization - matplotlib, seaborn
+- Modeling - scikit-learn, train_test_split, 
+- Machine Learning - DecisionTreeClassifier, ConfusionMatrixDisplay, classification_report, plot_tree
+
+## Skills
+- Data Exploration and Cleaning
+- Feature Transformation
+- Data Modeling
+- Building a Decision Tree Model
+
+## Model Evaluation
+**Confusion Matrix**
+
+<img width="525" height="435" alt="Screenshot 2025-12-10 at 8 53 11 PM" src="https://github.com/user-attachments/assets/84b55cb7-a157-4d6e-a203-1a73e08e6ad4" />
+
+**Classification Report**
+
+<img width="332" height="158" alt="Screenshot 2025-12-10 at 8 57 45 PM" src="https://github.com/user-attachments/assets/ae33201c-80a1-40e4-8e97-2dfe3aca0cb8" />
+
+**Accuracy** 
+- The model achieves an accuracy of 93%, meaning that 93% of all predictions, both satisfied and dissatisfied customers, were correctly classified. 
+
+**Precision**
+- With a precision of 94%, the model correctly identifies satisfied customers 94% of the time, with the remaining 6% representing false positives.
+
+**Recall**
+- A recall of 94% indicates that the model successfully captures 94% of all actual satisfied customers (true positives), with the remaining 6% representing false negatives.
+
+**F1** 
+- How good is the model at being both accurate when it predicts positive (precision) and thorough in finding positives (recall)? Balances precision and recall
+- F1 of 94% shows the model is highly reliable (accurate and consistent) at both correctly predicting satisfied customers and successfully identifying true satisfied customers
 
 ## Results and Conclusions
-any visuals and explanations of results 
+
+
+
+<img width="578" height="675" alt="Screenshot 2025-12-09 at 8 44 51 PM" src="https://github.com/user-attachments/assets/45b8e710-781d-40ec-8131-a461061f53b2" />
 
 ## Next Steps
+
 partial dependency plot
